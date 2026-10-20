@@ -1,0 +1,406 @@
+heading 文件预览, Value: 2
+					788 text 文件预览
+				789 text final_report_v2.md
+				790 button 放大文件预览
+				791 button 关闭文件预览
+				792 text markdown
+				793 text 60条订单经营分析与双Agent复核 — 修订报告
+				794 text 数据来源声明
+				795 container
+					796 text 本报告中所有数据来源于任务中提供的  60 条自建测试订单 CSV （非生产数据），包含 30 条 9 月 baseline 期订单和 30 条 10 月 current 期订单。 未使用的额外字段或外部信息均未被纳入计算 。数据来源仅为本自建测试集，不应用于实际业务决策。
+				797 text 一、整体汇总指标
+				798 table
+					799 row
+						800 cell
+							801 text 指标
+						802 cell
+							803 text 数值
+					804 row
+						805 cell
+							806 text 总原始金额 (gross)
+						807 cell
+							808 text 16,140 CNY
+					809 row
+						810 cell
+							811 text 总退款金额 (refund)
+						812 cell
+							813 text 1,144 CNY
+					814 row
+						815 cell
+							816 text 总净销售额 (net)
+						817 cell
+							818 text 14,996 CNY
+					819 row
+						820 cell
+							821 text 整体退款率
+						822 cell
+							823 text 7.09%
+							824 text （1,144 ÷ 16,140）
+					825 row
+						826 cell
+							827 text 9 月净额
+						828 cell
+							829 text 7,673 CNY
+					830 row
+						831 cell
+							832 text 10 月净额
+						833 cell
+							834 text 7,323 CNY
+					835 row
+						836 cell
+							837 text 10月相对9月净额变化率
+						838 cell
+							839 text -4.56%
+							840 text （(7,323 − 7,673) ÷ 7,673）
+				841 text 二、两期 × 渠道净销售额明细表
+				842 text 按时期-渠道拆分（每个子组各 10 单）
+				843 table
+					844 row
+						845 cell
+							846 text 时期
+						847 cell
+							848 text 渠道
+						849 cell
+							850 text 订单数
+						851 cell
+							852 text 总原始金额
+						853 cell
+							854 text 总退款金额
+						855 cell
+							856 text 净销售额
+						857 cell
+							858 text 退款率
+					859 row
+						860 cell
+							861 text baseline (9月)
+						862 cell
+							863 text 官网
+						864 cell
+							865 text 10
+						866 cell
+							867 text 2,740
+						868 cell
+							869 text 99
+						870 cell
+							871 text 2,641
+						872 cell
+							873 text 3.61%
+					874 row
+						875 cell
+							876 text baseline (9月)
+						877 cell
+							878 text 电商平台
+						879 cell
+							880 text 10
+						881 cell
+							882 text 2,840
+						883 cell
+							884 text 149
+						885 cell
+							886 text 2,691
+						887 cell
+							888 text 5.25%
+					889 row
+						890 cell
+							891 text baseline (9月)
+						892 cell
+							893 text 企业直销
+						894 cell
+							895 text 10
+						896 cell
+							897 text 2,540
+						898 cell
+							899 text 199
+						900 cell
+							901 text 2,341
+						902 cell
+							903 text 7.83%
+					904 row
+						905 cell
+							906 text current (10月)
+						907 cell
+							908 text 官网
+						909 cell
+							910 text 10
+						911 cell
+							912 text 2,640
+						913 cell
+							914 text 99
+						915 cell
+							916 text 2,541
+						917 cell
+							918 text 3.75%
+					919 row
+						920 cell
+							921 text current (10月)
+						922 cell
+							923 text 电商平台
+						924 cell
+							925 text 10
+						926 cell
+							927 text 2,440
+						928 cell
+							929 text 149
+						930 cell
+							931 text 2,291
+						932 cell
+							933 text 6.11%
+					934 row
+						935 cell
+							936 text current (10月)
+						937 cell
+							938 text 企业直销
+						939 cell
+							940 text 10
+						941 cell
+							942 text 2,940
+						943 cell
+							944 text 449
+						945 cell
+							946 text 2,491
+						947 cell
+							948 text 15.27%
+				949 text 按渠道跨期汇总
+				950 table
+					951 row
+						952 cell
+							953 text 渠道
+						954 cell
+							955 text 跨期总原始
+						956 cell
+							957 text 跨期总退款
+						958 cell
+							959 text 跨期净额
+						960 cell
+							961 text 跨期退款率
+						962 cell
+							963 text 9月净额
+						964 cell
+							965 text 10月净额
+						966 cell
+							967 text 渠道周期变化
+					968 row
+						969 cell
+							970 text 官网
+						971 cell
+							972 text 5,380
+						973 cell
+							974 text 198
+						975 cell
+							976 text 5,182
+						977 cell
+							978 text 3.68%
+						979 cell
+							980 text 2,641
+						981 cell
+							982 text 2,541
+						983 cell
+							984 text -3.79%
+					985 row
+						986 cell
+							987 text 电商平台
+						988 cell
+							989 text 5,280
+						990 cell
+							991 text 298
+						992 cell
+							993 text 4,982
+						994 cell
+							995 text 5.64%
+						996 cell
+							997 text 2,691
+						998 cell
+							999 text 2,291
+						1000 cell
+							1001 text -14.86%
+					1002 row
+						1003 cell
+							1004 text 企业直销
+						1005 cell
+							1006 text 5,480
+						1007 cell
+							1008 text 648
+						1009 cell
+							1010 text 4,832
+						1011 cell
+							1012 text 11.82%
+						1013 cell
+							1014 text 2,341
+						1015 cell
+							1016 text 2,491
+						1017 cell
+							1018 text +6.41%
+					1019 row
+						1020 cell
+							1021 text 合计
+						1022 cell
+							1023 text 16,140
+						1024 cell
+							1025 text 1,144
+						1026 cell
+							1027 text 14,996
+						1028 cell
+							1029 text 7.09%
+						1030 cell
+							1031 text 7,673
+						1032 cell
+							1033 text 7,323
+						1034 cell
+							1035 text -4.56%
+				1036 text 三、逐笔退款订单核对（共 6 笔）
+				1037 table
+					1038 row
+						1039 cell
+							1040 text 订单号
+						1041 cell
+							1042 text 时期
+						1043 cell
+							1044 text 产品
+						1045 cell
+							1046 text 渠道
+						1047 cell
+							1048 text 原始金额
+						1049 cell
+							1050 text 退款金额
+						1051 cell
+							1052 text 净额
+					1053 row
+						1054 cell
+							1055 text ORD-09-001
+						1056 cell
+							1057 text baseline
+						1058 cell
+							1059 text 数据分析入门课
+						1060 cell
+							1061 text 官网
+						1062 cell
+							1063 text 99
+						1064 cell
+							1065 text 99
+						1066 cell
+							1067 text 0
+					1068 row
+						1069 cell
+							1070 text ORD-09-014
+						1071 cell
+							1072 text baseline
+						1073 cell
+							1074 text 经营仪表盘模板
+						1075 cell
+							1076 text 电商平台
+						1077 cell
+							1078 text 149
+						1079 cell
+							1080 text 149
+						1081 cell
+							1082 text 0
+					1083 row
+						1084 cell
+							1085 text ORD-09-027
+						1086 cell
+							1087 text baseline
+						1088 cell
+							1089 text 会员服务包
+						1090 cell
+							1091 text 企业直销
+						1092 cell
+							1093 text 199
+						1094 cell
+							1095 text 199
+						1096 cell
+							1097 text 0
+					1098 row
+						1099 cell
+							1100 text ORD-10-001
+						1101 cell
+							1102 text current
+						1103 cell
+							1104 text 数据分析入门课
+						1105 cell
+							1106 text 电商平台
+						1107 cell
+							1108 text 149
+						1109 cell
+							1110 text 149
+						1111 cell
+							1112 text 0
+					1113 row
+						1114 cell
+							1115 text ORD-10-012
+						1116 cell
+							1117 text current
+						1118 cell
+							1119 text 报表自动化套件
+						1120 cell
+							1121 text 官网
+						1122 cell
+							1123 text 99
+						1124 cell
+							1125 text 99
+						1126 cell
+							1127 text 0
+					1128 row
+						1129 cell
+							1130 text ORD-10-023
+						1131 cell
+							1132 text current
+						1133 cell
+							1134 text 会员服务包
+						1135 cell
+							1136 text 企业直销
+						1137 cell
+							1138 text 449
+						1139 cell
+							1140 text 449
+						1141 cell
+							1142 text 0
+				1143 container
+					1144 text 核对说明 ：全量 60 单中仅有以上 6 单退款金额为正且状态为 refunded。其中：
+				1145 content list
+					1146 container
+						1147 AXListMarker • 
+						1148 text 数据分析入门课  有 2 笔退款（ORD-09-001 + ORD-10-001 = 298 CNY）
+					1149 container
+						1150 AXListMarker • 
+						1151 text 会员服务费  有 2 笔退款（ORD-09-027 + ORD-10-023 = 648 CNY）
+					1152 container
+						1153 AXListMarker • 
+						1154 text 经营仪表盘模板  有 1 笔退款（ORD-09-014 = 149 CNY）
+					1155 container
+						1156 AXListMarker • 
+						1157 text 报表自动化套件  有 1 笔退款（ORD-10-012 = 99 CNY）
+				1158 text 总计 6 笔退款、1,144 CNY，与汇总表完全一致。
+				1159 text 四、Leader 独立复核说明
+				1160 text 上述所有数据已由 Team Leader 使用 Python 脚本独立重新计算并逐项核对：
+				1161 content list
+					1162 container
+						1163 AXListMarker • 
+						1164 text 计算公式验证 ：净销售额 = 原始金额 − 退款金额；退款率 = 退款金额 / 原始金额；周期变化 = (10月净额 − 9月净额) / 9月净额。
+					1165 container
+						1166 AXListMarker • 
+						1167 text 关键指标交叉验证 ：整体退款率 7.09%，与 Worker 结果一致 ✅；10月相对9月净额变化率 −4.56%，一致 ✅。
+					1168 container
+						1169 AXListMarker • 
+						1170 text 逐笔退款核对 ：6 笔 refund 状态订单的 grossCny 与 refundCny 完全相等，分组加总无误。
+					1171 container
+						1172 AXListMarker • 
+						1173 text 渠道×时期维度加总验证 ：各时期三个渠道净额之和分别等于该时期总净额（7,673 和 7,323），无误。
+				1174 text 五、经营建议（基于数据的 3 条）
+				1175 text 建议 1：重点改善电商平台的净销售额
+				1176 container
+					1177 text 电商平台 是本期净额下降最大的渠道——环比下跌  −14.86% （−400 CNY），10 月净额仅 2,291 CNY。虽然其退款率从 9 月的 5.25% 升至 6.11%（+0.86个百分点），幅度并非最大，但净额的绝对降幅在三大渠道中最显著。建议排查电商平台退货/退款流程及订单流失原因。
+				1178 text 建议 2：关注企业直销渠道的退款率上升趋势
+				1179 container
+					1180 text 企业直销 的退款率在两大时期中升幅最大——从 9 月 7.83% 升至 10 月 15.27%（+7.44个百分点），跨期退款率达 11.82%，为三大渠道最高。虽然 10 月净销售额因原始金额增长（+400 CNY）反而上升了 +6.41%，但高退款率掩盖了部分收入质量风险。需深入分析该渠道大额退款（ORD-10-023，449 CNY 单笔）的原因。
+				1181 text 建议 3：官网渠道表现稳健可作为基准参考
+				1182 text 官网在所有指标上表现最好且波动最小：退款率仅 3.68%（全渠道最低），两期净销售额降幅仅 −3.79%。建议分析官网在产品包装、支付体验和客户服务等方面的优势做法，为其他渠道改进提供参考。
+				1183 text 六、待验证假设（未在订单数据字段中得到直接验证）
+				1184 container
+					1185 text 以下结论基于数据现象提出，但 无法由当前 CSV 中的字段直接证明因果关系 ，需在后续收集更多信息后验证：
+				1186 container
+					1187 text 1.  电商平台净额下降−14.86%的原因 ：可能是平台促销活动减少、流量下滑或竞品冲击所致。这些均为 待调查假设 ，不在本次订单数据覆盖范围内。
+2.  企业直销退款率骤升的具体诱因 ：10 月单笔 449 CNY 全额退款（ORD-10-023）可能反映客户体验问题或交付争议。此为 待调查假设 ，需进一步调研客户反馈。
+3.  产品维度的退款分布差异 ：数据分析入门课和会员服务包各发生 2 笔退款，其余两款产品各 1 笔。此现象提示某些产品线可能存在质量或服务短板，但样本量过小（仅 60 单），结论 有待更多数据验证 。
+				1188 text 本报告修订版由 business-analysis-leader 于 2026-10-18 生成。之前版本中引用的 report.md 因存在"会员服务包包含4笔全额退款"的错误已被从本次成果附件中移除。所有计算表和来源声明保留，摘要与此成果文件一致。
+
+The focused UI element is 780 button 预览

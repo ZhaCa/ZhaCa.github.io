@@ -1,0 +1,19 @@
+button 事件
+			248 button 文件
+			249 button 成员
+			250 button 详情
+			326 button AG AgentCore Team 任务执行员 创建任务 16:34:01
+				327 text AG
+				328 text AgentCore Team 任务执行员
+				329 text 创建任务
+				330 text 16:34:01
+			331 text BU business-analysis-leader 开始任务 16:34:15
+			332 button BU business-analysis-leader 创建子任务 16:34:30
+				333 text BU
+				334 text business-analysis-leader
+				335 text 创建子任务
+				336 text 16:34:30
+			337 text BU business-analysis-leader 更新任务计划
+			338 image
+			339 text 16:34:31 BU business-analysis-agent 确认接收子任务 16:34:40
+
