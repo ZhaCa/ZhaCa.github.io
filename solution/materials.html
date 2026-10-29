@@ -1,0 +1,121 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AgentOps 汇报配套材料</title><style>*{box-sizing:border-box}html{font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#f3f6fb;color:#193456}body{margin:0}main{max-width:1120px;margin:auto;padding:40px 42px 90px}header{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid #cbdbee;padding-bottom:20px}header a,nav a{color:#135bb6;text-decoration:none;font-weight:650}nav{display:flex;gap:22px;flex-wrap:wrap;margin:22px 0}h1{font-size:34px;line-height:1.4;letter-spacing:-1px}h2{font-size:25px;margin-top:38px;border-left:4px solid #125cc7;padding-left:14px}p{color:#476381}a{color:#125cc7}section{background:#fff;border:1px solid #d4e0ee;border-radius:10px;padding:28px;margin:28px 0}.table{overflow:auto}table{border-collapse:collapse;font-size:14px;width:100%;min-width:680px}td{padding:12px;border:1px solid #d2e0f0;vertical-align:top}tr:first-child{background:#eaf2ff;font-weight:750}input{padding:10px 14px;min-width:280px;border:1px solid #bdcfe6;border-radius:6px;font:inherit}button{font:inherit;border:1px solid #bdcfe6;background:#fff;color:#125cc7;border-radius:6px;padding:8px 15px;cursor:pointer}code{font:13px ui-monospace,monospace;overflow-wrap:anywhere}a:focus-visible,input:focus-visible,button:focus-visible{outline:3px solid #b18329;outline-offset:3px}[hidden]{display:none!important}@media print{header,nav,input,button{display:none}main{padding:0;max-width:none}section{border:0;padding:0;break-before:page}section:first-of-type{break-before:auto}.table{overflow:visible}table{min-width:0}html{background:#fff}}</style><main><header><a href="./index.html#1">← 返回 12 页汇报</a><b>AgentOps · V2.0 汇报资料</b></header><nav><a href="#talk">20分钟讲述稿</a><a href="#demo">6分钟Demo路线</a><a href="#evidence">价值与能力核对表</a></nav><input id="search" type="search" aria-label="搜索资料" placeholder="搜索资料内容…"> <button id="print">打印 / 保存 PDF</button><section id="talk"><h1>AgentOps 20 分钟讲述稿</h1>
+<p>适用：2026-10-30 领导汇报；12 页主稿，含第 9 页 6 分钟 Demo。时间为讲述预算，不含问答。</p>
+<p>主线：有依据地交付任务 → 有边界地管理执行 → 有证据地验收结果 → 改进持续积累。</p>
+<h2>第 1 页｜让企业放心把任务交给 Agent｜00:00–01:00</h2>
+<p><strong>本页结论：</strong> 神州数码 · 面向企业 Agent 的统一 AgentOps 平台</p>
+<p>我今天想汇报一个产品判断：当企业开始把业务任务交给 Agent，就需要一套机制，对它的运行、结果和变更负责。Agent 能生成回答、调用工具，说明它具备执行能力；但企业还需要知道它适合做什么，执行有没有越界，工作究竟做对没有。我们将这套机制概括为事前可信、事中可控、事后可证，并通过持续优化形成闭环。神州数码 AgentOps 的定位，是面向企业 Agent 的统一运行管理与持续优化平台。今天重点说明为什么需要这套机制、产品怎样实现，以及怎样用具体案例验证方向。</p>
+<p><strong>过渡：</strong> 先从企业把任务交出去之后，最关心的三个问题讲起。</p>
+<h2>第 2 页｜Agent 完成了调用，企业还要验收工作｜01:00–02:00</h2>
+<p><strong>本页结论：</strong> 管理对象从一次调用，延伸到一个有责任、有权限、有结果的业务任务。</p>
+<p>企业采用 Agent 的目标，是完成工作，而不是增加模型调用次数。例如一份分析报告已经生成，任务技术状态是成功，但报告里的金额可能算错；一个运维动作返回成功，业务服务却不一定恢复。Agent 可能跨多轮调用、多个工具和多个成员完成任务，企业需要把这些过程与最终交付联系起来。因此我们的切入点，是从任务视角建立管理机制。它既包含安全边界，也包含质量、责任、成本和后续变更。具体客户是否存在这些缺口，还需要用它的任务与系统证据核对。</p>
+<p><strong>过渡：</strong> 这套管理机制可以压缩成前、中、后三个阶段。</p>
+<h2>第 3 页｜事前可信，事中可控，事后可证｜02:00–03:30</h2>
+<p><strong>本页结论：</strong> 让任务有依据地交付、有边界地执行、有证据地验收。</p>
+<p>事前可信，是有依据地决定可以把什么工作交给 Agent。我们明确业务目标、验收口径、负责人、资源权限，并用样本测试能力。事中可控，是执行过程能看见，授权有边界，高风险动作保留人工控制权，异常有处置路径。事后可证，是回到业务标准验收结果，并能解释来源、版本、责任与投入。三者之外还必须形成一条返回路径：把失败沉淀为样本，用相同口径比较候选版本，审批发布，再看新任务。这里的可信是有条件的使用判断；可控依赖接入的真实执行点；持续优化由评测和人工决策推动，不表示系统自主进化或永不出错。</p>
+<p><strong>过渡：</strong> 接下来说明，这些价值怎样落在同一套产品对象上。</p>
+<h2>第 4 页｜三个对象，连接运行与优化两条主线｜03:30–05:00</h2>
+<p><strong>本页结论：</strong> 企业组织 → 工作空间 → 环境；对象、证据和变更互相可追溯。</p>
+<p>产品用 Agent、任务、版本三个对象把各模块连接起来。Agent 记录来源、负责人、资源、身份和运行版本；任务承载业务目标、参与者、执行证据和核验结果；版本承载变更以及对应的样本、评测和审批依据。上面一条运行管理主线，解决接入、资源配置、Team 与任务运行；下面一条持续优化主线，将运行中的问题带到样本、评测、候选和发布，再回到运行。治理、事件和成本横向贯穿。我们不要求企业重建已有 Agent，外部纳管和平台托管可以共用这些对象。能发现、能观测、能控制分别说明，不能因为接到了 Trace 就宣称有远程控制能力。</p>
+<p><strong>过渡：</strong> 有了统一对象，首先看任务交付之前的管理。</p>
+<h2>第 5 页｜先明确怎样算做对，再决定是否上线｜05:00–06:15</h2>
+<p><strong>本页结论：</strong> 企业得到：基于能力证据与授权范围，作出可负责的使用决定。</p>
+<p>事前阶段，平台帮助企业形成一个可负责的使用决定。第一步定义任务目标和验收口径，由业务负责人说明什么结果才算正确；第二步明确模型、工具和执行身份，知道 Agent 可以使用哪些资源；第三步建立基线样本，既测试正常任务，也测试缺字段、依赖故障和越界推断；最后检查上线准入并留存审批。这使企业可以说明为什么允许这个版本承担这些任务，而不是凭一次演示作判断。当前综合原型可以展示登记、样本、版本输出、同集评测和审批关系。实际效果取决于真实测试覆盖和外部系统授权，不能把通过几个样本讲成已经保证所有任务正确。</p>
+<p><strong>过渡：</strong> 任务上线后，管理并没有结束。</p>
+<h2>第 6 页｜执行看得见，关键动作保留控制权｜06:15–07:30</h2>
+<p><strong>本页结论：</strong> 企业得到：授权范围明确、异常有人处理、危险动作有放行依据。</p>
+<p>事中可控有两部分。首先是过程可见：从父任务到 Team 子任务，再到模型与工具调用，知道谁在执行、运行哪个版本、异常发生在哪一步。其次是动作受控：身份与资源动作先经过判定，必要时人工批准；发送请求、源系统接受和目标效果生效分别记录。对于没有控制接口的外部 Agent，平台只能在已接入范围内观测，处置应转人工工单。对于退款、变更等存在业务副作用的动作，不能因为超时就盲目重试。当前综合原型验证的是这套状态和操作流程；生产级拦截与恢复能力还需要执行点适配，不能把界面上有审批按钮当作真实系统已经受控。</p>
+<p><strong>过渡：</strong> 控制过程之后，还必须回到业务结果。</p>
+<h2>第 7 页｜验收这一次，把问题留给下一次改进｜07:30–08:45</h2>
+<p><strong>本页结论：</strong> 企业得到：交付可验收、问题可解释、质量改进可积累。</p>
+<p>事后可证比事后可溯更进一步。追溯说明发生了什么；业务核验说明这次工作是否符合要求。金额可以通过确定性规则复算，开放式质量需要人工或专项评测。费用也需要解释来源，缺失用量不能当作零成本。若结果不符合要求，就把失败证据变成可复测样本，基线与候选使用同一快照进行比较，避免凭感觉认为改好了。通过评测还要审批发布，并用新的运行任务再次确认。平台想积累的是企业自己的质量资产和版本依据。发现到定位耗时、业务通过率、重复问题率和成本改善，目前都是需要在真实试点中测量的收益，不预先承诺提升百分比。</p>
+<p><strong>过渡：</strong> 用一份经营分析报告，说明这个差别为什么重要。</p>
+<h2>第 8 页｜报告已经生成，金额却没有算对｜08:45–10:15</h2>
+<p><strong>本页结论：</strong> AgentCore 已采集测试历史；60 条订单为自建测试数据。</p>
+<p>这个案例来自已采集的 AgentCore 测试历史，订单本身是我们自建的测试数据。单 Agent 成功生成报告，但净额写为一万二千一百七十九元，独立复算应为一万四千九百九十六元，相差两千八百一十七元。这不是一个单看调用成功率就能发现和解释的问题。我们要沿任务查看原始输入、报告和工具日志，区分计算错误、字段缺失以及没有依据的推断。历史里没有采集到的单次 Trace、Span 和 Token 就保持未采集。另一个容易混淆的地方：六十条订单是一批业务数据，baseline 和 current 是两个业务周期，都不是模型版本或执行次数。接下来用独立练习空间展示如何管理改进。</p>
+<p><strong>过渡：</strong> 进入 Demo，只沿同一个错误走五个节点。</p>
+<h2>第 9 页｜让一次错误，走完可核验的改进闭环｜10:15–16:15</h2>
+<p><strong>本页结论：</strong> 历史证据说明问题；独立练习副本展示本地回放流程。</p>
+<p>这六分钟按五个节点操作，详细按钮与备用路线见配套 Demo 路线。先用一分钟看真实历史的错误报告和业务不一致状态；再用四十五秒查看输入与工具证据；用一分半查看练习数据集、失败来源和同集逐样本对比；用一分半查看候选、业务安全审批、发布及运行版本；最后一分十五秒看新任务复测与业务核验。现场先说明新增操作是本地回放，固定规则分数不代表云模型已经改善。不临时输入大量配置，不全量重置浏览器数据，不把其他空间对象拿来替代。若现场步骤被打乱，使用提前准备的只读关键页面；若外部模型未完成验收，不切到本地真实运行版承诺现场运行。结束时强调证据与版本关联，回到业务结果。</p>
+<p><strong>过渡：</strong> 这套机制不只适用于经营分析，还能迁移到运维业务。</p>
+<h2>第 10 页｜同一套机制，管理从告警到业务恢复的任务｜16:15–17:30</h2>
+<p><strong>本页结论：</strong> 运维作为重点应用场景，平台保持面向企业 Agent 的通用定位。</p>
+<p>经营分析的验收标准是金额与口径正确，运维的验收标准则是服务恢复。机制可以复用：事前定义目标、权限和处置样本；事中由 Team 分工诊断、提出方案，经过 Dry-run 和人工放行后执行；事后先核对源回执和实际效果，再分别确认技术恢复与业务恢复。没有控制适配就转人工工单，不能只在页面里把事件状态改成已恢复。AIOps 与神州数码已有运维业务和系统衔接条件相关，可以作为首批验证方向，但平台仍统一管理企业各种 Agent。这里表达的是场景方案与原型流程，真实客户接口、权限和恢复效果需联调确认。</p>
+<p><strong>过渡：</strong> 最后说明这项产品方向与神州数码能力的关系。</p>
+<h2>第 11 页｜衔接已有智能应用，补齐持续生产管理｜17:30–18:45</h2>
+<p><strong>本页结论：</strong> 目标是复用已有能力，并用真实场景检验统一管理的价值。</p>
+<p>对神州数码而言，这个方向的机会，在于智能应用的交付会带来后续运行与效果管理需求。问学或 Workspace 中的 Agent 与协作应用、企业知识库、模型服务和分析应用，都可以成为衔接来源。AgentOps 管理这些对象在运行、质量与变更上的关系。我们表达的是计划衔接和产品分工，并不声称这些接口已经完成。方向的目标差异，是把运行、业务结果、优化和治理连成同一条证据链；是否能形成优势，要靠真实集成、场景经验和持续使用效果验证。如果客户现有平台已经完整满足需求，就应复用，优先解决未覆盖的管理缺口。</p>
+<p><strong>过渡：</strong> 因此下一步的重点，是用一条真实流程检验这项判断。</p>
+<h2>第 12 页｜先验证一条业务闭环，再扩大使用范围｜18:45–20:00</h2>
+<p><strong>本页结论：</strong> 让 Agent 从“能做事”，走向企业可以持续使用的业务生产力。</p>
+<p>总结一下，我们建议把 AgentOps 定位为神州数码面向企业 Agent 的统一生产管理平台。核心机制是事前可信、事中可控、事后可证，并形成持续优化闭环。当前综合原型已把主要对象和流程关联起来；独立本地运行版具备模型工具执行、评测与发布工程，临时模型服务闭环测试已经记录，但真实外部模型完整闭环仍待验收。下一步选择一个已有 Agent 或 Team、一条业务流程和一个业务 Owner，先记录原来的定位耗时、业务通过率、重复问题和成本口径，再做同口径比较。先确认流程是否贯通、结果是否可验，再判断收益是否成立。今天希望建立的共识是：企业使用 Agent 需要这套管理机制，我们从具体场景验证，而不是先承诺大而全的生产能力。</p>
+<p><strong>过渡：</strong> 进入问答：具体能力、实现边界和验证指标见配套材料。</p>
+<h2>常见追问与回答</h2>
+<p><strong>和 Agent 构建平台有什么关系？</strong> 复用已有构建能力，管理任务运行、业务结果和版本改进。先核对客户平台已覆盖什么，再补齐真实缺口。</p>
+<p><strong>为什么不是把几个工具拼起来？</strong> 重点是关联关系：同一个失败任务能追到样本、候选评测、审批发布和新任务核验。应以这条证据链验证整合价值。</p>
+<p><strong>是不是安全平台？</strong> 安全与权限是企业敢用的前提；平台还管理任务协作、质量、业务核验、版本和费用，定位是企业 AgentOps。</p>
+<p><strong>已经证明降本增效了吗？</strong> 尚未。定位耗时、重复问题率、业务通过率和成本均需真实试点按相同口径测量。</p>
+<p><strong>现在能真实运行吗？</strong> 公开站是浏览器本地模拟。另有 v2.3.0-local.2 单机运行工程，临时模型服务闭环测试已记录；真实外部模型完整闭环仍需有效连接下验收。</p>
+<p><strong>能控制所有外部 Agent 吗？</strong> 不能。发现、观测、控制分别取决于来源能力和执行点适配。无接口转人工，未知写副作用不自动重放。</p>
+<p><strong>费用怎么看？</strong> 区分原厂账单、估算、缺失、未归属；未采集不是零成本，不能把估算当账单。</p>
+<p><strong>怎样证明试点有价值？</strong> 固定场景、数据口径和版本，先记录原流程基线，再比较证据完整性、问题处理耗时和业务核验结果；不预设收益比例。</p><p><a href="./20分钟讲述稿.md" download>下载 Markdown ↗</a></p></section><section id="demo"><h1>AgentOps 6 分钟 Demo 路线</h1>
+<h2>演示目标与使用方式</h2>
+<p>向领导证明：同一个业务问题，能够关联到证据、样本、候选、评测、审批、运行版本及新任务业务核验。主稿第 9 页暂停，使用预先打开的页面演示。公开 Demo 不新增云端运行；历史数据来自已采集的 AgentCore 测试，练习操作是本地回放。</p>
+<p>不要临时登记新 Agent 或录入长表单。下面的可点击链接都指定工作空间，进入后核对顶部空间和对象，防止串用其他业务数据。演示浏览器的练习状态是本机持久数据；领导在其他设备打开时不会自动得到你的操作状态。</p>
+<h2>演示前准备</h2>
+<p>1. 打开<a href="https://zhaca.github.io/console/cases/business-analysis-60?workspace=ws-agentcore-history" target="_blank" rel="noopener">案例历史 ↗</a>，核对四次执行与来源证据。</p>
+<p>2. 打开<a href="https://zhaca.github.io/console/cases/business-analysis-60?workspace=ws-agentcore-practice" target="_blank" rel="noopener">练习案例 ↗</a>，核对空间为“经营分析 · 练习副本”。</p>
+<p>3. 如需重练，只在案例页使用“仅重置练习”，并先确认原有练习数据可舍弃；不要全量重置其他空间。</p>
+<p>4. 提前走完入集、建立候选、配置、两次评测、实验、两审批、发布、复测、业务核验，把关键结果页面分别打开。录入与等待不占现场时间。</p>
+<p>5. 将本地发布包的 <code>index.html</code> 保存在电脑，网络不稳定时直接用第 8、9 页示意讲解；不把示意说成实时调用。</p>
+<p>6. 默认使用公开综合 Demo。v2.3.0-local.2 只有在真实模型连接与完整闭环提前验收后，才作为另一个可选演示；不要临场配置密钥。</p>
+<h2>五个展示节点</h2>
+<div class="table"><table>
+<tr><td>时间</td><td>打开什么</td><td>操作与核对</td><td>现场话术</td></tr>
+<tr><td>00:00–01:00</td><td><a href="https://zhaca.github.io/console/tasks/history-task-single?workspace=ws-agentcore-history" target="_blank" rel="noopener">原错误任务 ↗</a></td><td>看任务输入、原报告与技术／业务状态；原报告净额 12,179，独立复算 14,996</td><td>“报告已经生成，但业务结果没有做对。我们把两个状态分开。”</td></tr>
+<tr><td>01:00–01:45</td><td><a href="https://zhaca.github.io/console/cases/business-analysis-60?workspace=ws-agentcore-history" target="_blank" rel="noopener">历史案例证据 ↗</a></td><td>打开原始 CSV、报告或工具日志；缺失 Trace／Token 保持未采集</td><td>“判断错误来自可核对的原始证据，不根据一张成功率看板下结论。”</td></tr>
+<tr><td>01:45–03:15</td><td><a href="https://zhaca.github.io/console/quality/case-dataset-analysis?workspace=ws-agentcore-practice" target="_blank" rel="noopener">练习数据集 ↗</a>及练习案例</td><td>展示失败执行证据已入集、六类回归样本、来源任务；比较基线和候选，核对同一数据集／评测器快照及逐样本依据</td><td>“一次错误进入回归集。下一版改得好不好，用同样的问题检验。”</td></tr>
+<tr><td>03:15–04:45</td><td><a href="https://zhaca.github.io/console/releases?workspace=ws-agentcore-practice" target="_blank" rel="noopener">发布中心 ↗</a></td><td>打开本机案例的候选／发布记录，显示业务与安全审批、发布状态；到 Agent 核对活动版本</td><td>“候选、批准和生产运行版本不是一件事，批准后还要手动发布。”</td></tr>
+<tr><td>04:45–06:00</td><td><a href="https://zhaca.github.io/console/cases/business-analysis-60?workspace=ws-agentcore-practice" target="_blank" rel="noopener">练习案例 ↗</a>中的最新复测任务</td><td>点“本地复测”或打开已准备的复测结果；独立确认业务核验。核对 16,140 − 1,144 = 14,996 与两期口径</td><td>“发布不是终点，新的业务任务核验才说明这一轮闭环走到了哪里。”</td></tr>
+</table></div>
+<h2>练习操作顺序</h2>
+<p>“执行证据入集” → “建立候选版本” → “修改候选配置”，选择标准库精确累计及证据边界配置 → “评测基线”与“评测候选”（同集同规则） → “运行同集实验” → “提交发布申请” → 分别批准业务与安全事项 → “发布获批版本” → “本地复测” → “业务结果核验”。动态生成的候选、评测和任务 ID 从当前案例页打开，不写死其他浏览器的 ID。</p>
+<h2>异常与备用讲法</h2>
+<p>- <strong>页面没有对象</strong>：先检查空间、环境和筛选；历史只读，配置和发布在练习副本执行。</p>
+<p>- <strong>审批／发布不能继续</strong>：查看缺少的有效评测、实验或审批。样本或候选变更后重新评测申请，不用旧审批绕过。</p>
+<p>- <strong>Worker 或网络异常</strong>：刷新一次并回到案例页。仍失败则切回本地 HTML 第 8、9 页，说明当前演示故障，沿静态证据讲解机制。</p>
+<p>- <strong>本地复测结果未核验或不一致</strong>：如实展示；执行成功不能手动替代业务正确。不要把失败改成通过来完成演示。</p>
+<p>- <strong>没有准备好的全闭环状态</strong>：演示历史问题与已有证据，再用第 9 页讲后续产品流程，明确其为流程展示。</p>
+<h2>口径提醒</h2>
+<p>60 条订单不是 60 次执行；baseline/current 是业务周期，不是 Agent 版本。全量退款为 6 笔，会员服务包退款为 2 笔，不能混称。原报告差异是真实采集测试记录中的问题，练习候选改善与评分是本地规则回放，不代表真实云模型修复。账户级未归属费用不混入 Workspace 账单合计。</p><p><a href="./6分钟Demo路线.md" download>下载 Markdown ↗</a></p></section><section id="evidence"><h1>AgentOps 价值与能力核对表</h1>
+<p>核对日期：2026-10-29。用于讲述准备与领导问答，不放入主稿逐项讲解。</p>
+<h2>核对依据与证据层级</h2>
+<p>- 公开综合 Demo <code>/console/*</code>：浏览器本地模拟，基于 v2.2 管理与状态流程；真实历史具有独立来源标记。</p>
+<p>- 主要源码：<code>交互原型/agentops-console/src/v2/management-pages.ts</code>、<code>management-actions.ts</code>、<code>actions.ts</code>、<code>business-case.ts</code>、<code>workbench.ts</code>、<code>evaluation-rules.ts</code>。同时核对 <code>tests/management.test.ts</code>、<code>tests/v2.test.ts</code>、<code>tests/business-case.test.ts</code> 及已有验收记录。</p>
+<p>- 独立本地运行工程 v2.3.0-local.2：<code>/live</code> + <code>/api/v1</code>；依据本地操作手册、验收记录和 <code>tests/live.test.ts</code>。已记录临时模型服务闭环测试；真实外部模型完整闭环待有效连接下验收。</p>
+<p>- 本次为汇报材料核对，未重新执行全部产品测试，未替用户配置或使用真实模型密钥。</p>
+<h2>价值到流程的匹配</h2>
+<div class="table"><table>
+<tr><td>价值</td><td>入口与关联对象</td><td>可观察流程与证据</td><td>当前匹配判断</td><td>不能据此承诺</td></tr>
+<tr><td>资产与责任明确</td><td><a href="https://zhaca.github.io/console/agents" target="_blank" rel="noopener">Agent 中心 ↗</a>、<a href="https://zhaca.github.io/console/integrations" target="_blank" rel="noopener">接入资源 ↗</a></td><td>来源原生 ID、Owner、空间环境、版本与资源身份；测试连接后同步，配置变化需重测</td><td>综合原型有对象与操作流程支撑</td><td>全行业真实连接器、自动资产全覆盖</td></tr>
+<tr><td>上线有依据</td><td><a href="https://zhaca.github.io/console/quality" target="_blank" rel="noopener">评测 ↗</a>、<a href="https://zhaca.github.io/console/releases" target="_blank" rel="noopener">发布 ↗</a></td><td>样本与版本输出、评测器、同集实验、业务／安全审批、手动发布；变更依据后旧申请失效</td><td>综合原型闭环支撑；本地工程有测试记录</td><td>所有业务都正确，自动证明生产可靠性</td></tr>
+<tr><td>过程可见</td><td><a href="https://zhaca.github.io/console/observe" target="_blank" rel="noopener">观测 ↗</a>、<a href="https://zhaca.github.io/console/runtime" target="_blank" rel="noopener">运行 ↗</a></td><td>任务／Session／Trace 或执行事件、工具日志、版本关联；采集与运行健康分开</td><td>模拟观测及采集历史有支撑；本地版有调用事件工程</td><td>未采集遥测可被补造、所有来源均完整观测</td></tr>
+<tr><td>多 Agent 协作管理</td><td><a href="https://zhaca.github.io/console/teams" target="_blank" rel="noopener">Team ↗</a></td><td>Leader 分派、子任务、前序条件、失败、人工退回、修订尝试、父任务业务确认</td><td>综合原型与固定本地 Team 流程支撑</td><td>任意自主编排、无须人工的全面业务验收</td></tr>
+<tr><td>执行风险受控</td><td><a href="https://zhaca.github.io/console/governance" target="_blank" rel="noopener">治理 ↗</a>、<a href="https://zhaca.github.io/console/incidents" target="_blank" rel="noopener">事件 ↗</a></td><td>身份、到期与代理授权、策略拒绝、Dry-run、控制审批、发送／接受／效果分别核验</td><td>综合原型规则与流程支撑，生产拦截待适配</td><td>已具备全栈安全平台，控制所有外部系统</td></tr>
+<tr><td>业务结果可证</td><td><a href="https://zhaca.github.io/console/cases/business-analysis-60" target="_blank" rel="noopener">任务案例 ↗</a></td><td>输入、原始成果、确定性金额复算、技术／业务状态、成果审核；事件双重恢复</td><td>核心价值有直接案例支撑；开放式结果仍需人工</td><td>生成了报告就正确，技术恢复就是业务恢复</td></tr>
+<tr><td>改进持续积累</td><td><a href="https://zhaca.github.io/console/cases/business-analysis-60?workspace=ws-agentcore-practice" target="_blank" rel="noopener">经营分析练习 ↗</a></td><td>失败入集→候选→同集评测→实验→双审批→发布→新任务核验</td><td>综合原型可展示完整链条；本地版有相应工程与临时服务测试</td><td>自主学习或经验入库立即改变运行版本，真实模型收益已验证</td></tr>
+<tr><td>成本可解释</td><td><a href="https://zhaca.github.io/console/costs" target="_blank" rel="noopener">成本 ↗</a></td><td>原厂／估算／缺失／未归属、预算与分摊；本地版用实际返回 Token 与配置价格估算</td><td>费用口径与管理流程有支撑</td><td>自动降本、估算等于账单、未知等于零</td></tr>
+<tr><td>企业范围管理</td><td><a href="https://zhaca.github.io/console/settings" target="_blank" rel="noopener">设置 ↗</a></td><td>空间环境、成员访问、只读、数据策略、审计；管理员全权限演示</td><td>原型规则支撑</td><td>生产强隔离、真实驻留删除与不可篡改存储已实现</td></tr>
+<tr><td>真实运行验证路径</td><td>本地 <code>http://127.0.0.1:5190/live</code></td><td>连接测试、只读订单工具、单 Agent／固定 Team、实际事件记录、评测、人审、审批、发布回滚</td><td>临时模型服务 60 项自动测试记录；外部模型尚待现场验收</td><td>已完成真实云模型全闭环、多人平台托管或外部 MCP</td></tr>
+</table></div>
+<h2>试点怎么判断价值成立</h2>
+<div class="table"><table>
+<tr><td>需要测量的结果</td><td>口径与证据</td><td>比较条件</td></tr>
+<tr><td>交付是否可验收</td><td>已独立核验任务数／应核验任务数；另列待核验、证据缺失及通过率</td><td>固定业务验收规则，不用技术成功率替代</td></tr>
+<tr><td>证据是否完整</td><td>可关联 Owner、版本、输入、执行证据、审批和结果的任务比例</td><td>先定义所选场景的必需证据，缺失单列</td></tr>
+<tr><td>处理是否更有效</td><td>从问题发现到定位、到修复验证的时间</td><td>相似问题复杂度、相同起止定义；保留原流程基线</td></tr>
+<tr><td>问题是否减少复发</td><td>已修复问题在同类后续任务中的再次发生率</td><td>同口径任务集与观察窗口，记录样本量</td></tr>
+<tr><td>成本是否值得</td><td>每个业务核验通过任务的成本；账单、估算与缺失分别记录</td><td>相同任务负载与质量条件，实际账单出齐后复核</td></tr>
+</table></div>
+<p>所有收益均先测基线再比较，不预置提升比例。样本量不足或业务负载变化时，只报告观察，不作因果结论。</p>
+<h2>神州数码能力衔接的表达</h2>
+<p>问学／Workspace、企业知识库、MaaS、AI for BI 属于可复用或计划衔接来源。主稿表达产品分工和集成方向，不宣称 API、授权与对象映射已完成。AIOps 是候选验证场景，不把通用平台限定为智能运维产品。当前目标差异是证据与对象贯通；竞争优势需要集成与持续使用结果验证。</p><p><a href="./价值与能力核对表.md" download>下载 Markdown ↗</a></p></section></main><script>const search=document.querySelector('#search');search.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();document.querySelectorAll('section').forEach(s=>s.hidden=!!q&&!s.textContent.toLowerCase().includes(q))});document.querySelector('#print').onclick=()=>print();</script></html>
